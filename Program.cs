@@ -1,2 +1,19 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+namespace modul4_103022300101
+{
+    class Program {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Daftar Produk");
+            Console.WriteLine("=========================");
+            Console.WriteLine("Produk\t |     Kode Prduk");
+            Console.WriteLine("=========================");
+            foreach (KodeProduk.Produk prdk in Enum.GetValues(typeof(KodeProduk.Produk)))
+            {
+                string namaProduk = prdk.ToString();
+                Console.WriteLine($"{prdk,-13} |     {KodeProduk.getKodeProduk(prdk)}");
+            }
+        }
+    }
+}
