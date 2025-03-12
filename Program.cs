@@ -9,6 +9,7 @@ namespace modul4_103022300101
             Console.WriteLine("=========================");
             Console.WriteLine("Produk\t |     Kode Prduk");
             Console.WriteLine("=========================");
+            //Perulangan untuk menampilkan Produk dan kode poduk
             foreach (KodeProduk.Produk prdk in Enum.GetValues(typeof(KodeProduk.Produk)))
             {
                 string namaProduk = prdk.ToString();
